@@ -1,0 +1,88 @@
+
+body {
+    background-color: blue;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styles  header */
+header {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.logo img {
+    height: 50px;
+}
+
+.login-button button {
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: block;
+    align-items: center;
+}
+
+#search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* Styles pour les catégories */
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.categories {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 10px;
+}
+
+/* Styles pour les cartes */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(33.33% - 20px); /* Pour créer 3 colonnes de cartes */
+}
+
