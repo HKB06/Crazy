@@ -1,0 +1,215 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles pour le header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+    padding-left: 5px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 10px 12px;
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    cursor: pointer;
+    
+    
+}
+
+/* Styles pour le menu dépliant */
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu li.has-submenu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li.has-submenu:hover .submenu {
+    display: block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Styles pour les cartes de produits */
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Media Query 768px */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Query pour les écrans de largeur maximale de 480px (par exemple, smartphones) */
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 80px;
+    }
+
+    .search-bar input[type="text"] {
+        width: 60%;
+    }
+
+    .search-bar button {
+        padding: 6px 10px;
+    }
+}
+body{
+    background-color: blue;
+}
+
+
+/* CSS existant */
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Change la couleur de fond des numéros de page au survol */
+.pagination a:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Aligne les numéros horizontalement */
+.pagination ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+
