@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: blue;
 }
 
 /* Styles pour le header */
@@ -159,14 +160,9 @@ header {
         padding: 6px 10px;
     }
 }
-body{
-    background-color: blue;
-}
-
-
-/* CSS existant */
 
 /* Styles pour le footer */
+
 footer {
     background-color: #333;
     color: white;
@@ -175,15 +171,15 @@ footer {
 }
 
 .pagination {
-    list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
+    
 }
 
 .pagination li {
-    margin: 0 5px;
+    margin: 0px;
 }
 
 .pagination a {
@@ -194,22 +190,43 @@ footer {
     width: 30px;
     height: 30px;
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 0;
     text-align: center;
     line-height: 30px;
+    margin-right: 15px
 }
 
 /* Change la couleur de fond des numéros de page au survol */
+
 .pagination a:hover {
     background-color: white;
     color: #333;
 }
 
 /* Aligne les numéros horizontalement */
+
 .pagination ul {
     display: inline-flex;
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
+/* Styles pour la section publicitaire */
+.publicite {
+    position: fixed;
+    top: 0; /* Position en haut */
+    margin-top: 150px;
+    right: 0; /* Position à droite */
+    width: 150px; /* Largeur de la section publicitaire */
+    height: 400px; /* Hauteur de la section publicitaire (pleine hauteur de la fenêtre) */
+    background-color: #f0f0f0; /* Couleur de fond de la publicité */
+    text-align: center;
+    overflow: hidden; /* Pour gérer le contenu qui dépasse la hauteur */
+    z-index: 999; /* Pour placer la publicité au-dessus du contenu principal */
+}
 
+.publicite img {
+    max-width: 100%;
+    height: auto;
+}
