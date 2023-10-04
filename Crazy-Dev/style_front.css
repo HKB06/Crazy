@@ -108,6 +108,7 @@ header {
 }
 
 /* Styles pour les cartes de produits */
+
 .produits {
     display: flex;
     flex-wrap: wrap;
