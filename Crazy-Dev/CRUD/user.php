@@ -1,20 +1,24 @@
 <?php
 include 'connect.php';
-if(isset($_POST['submit'])){
-    $name=$_POST['name'];
-    $email=$_POST['email'];
-    $password=$_POST['password'];
 
-    $sql="insert into data (name,email,password) 
-    value('$name','$email','$password')";
-    $result=mysqli_query($con,$sql);
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO data (name, email, password) 
+            VALUES ('$name', '$email', '$password')";
+    
+    $result = mysqli_query($con, $sql);
+
     if($result){
-        // echo " enregistrement effectué";
-        header('location:display.php');
+        $userId = mysqli_insert_id($con); // Récupère l'ID de l'utilisateur créé
+        echo "Enregistrement effectué. ID de l'utilisateur créé : " . $userId;
     }else{
         die(mysqli_error($con));
     }
 }
+
 ?>
 
 
@@ -31,15 +35,15 @@ if(isset($_POST['submit'])){
         <form method="post">
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" placeholder="Entre your name" name="name" autocomplete="off">
+                <input type="text" required class="form-control" placeholder="Entre your name" name="name" autocomplete="off">
             </div>
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" placeholder="Entre your email" name="email" autocomplete="off">
+                <input type="email" required class="form-control" placeholder="Entre your email" name="email" autocomplete="off">
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="text" class="form-control" placeholder="Entre your password" name="password"autocomplete="off">
+                <input type="text" required class="form-control" placeholder="Entre your password" name="password"autocomplete="off">
             </div>
                 
 
