@@ -20,7 +20,7 @@
                 <label><b>Mot de passe</b></label>
                 <input id="login" type="password" placeholder="Entrer le mot de passe" name="password" required>
             </div>
-            <input type="submit" id='submit' value='LOGIN'>
+            <input type="submit" id='login' value='LOGIN'>
             <?php
                 if(isset($_GET['erreur'])){
                 $err = $_GET['erreur'];
