@@ -26,13 +26,13 @@ if ($data === null) { // Utilisez === null pour vérifier si l'utilisateur n'exi
     mysqli_query($connexion, $sql) or die('Erreur SQL !' . $sql . '<br />' . mysqli_error($connexion));
     $erreur = 'Inscription réussie !';
     echo $erreur;
-    echo "<br/><a href=\"Index.html\">Accueil</a>";
+    echo "<br/><a href=\"index.php\">Accueil</a>";
     exit();
 
 } else {
     $erreur = 'Echec de l\'inscription !<br/>Un membre possède déjà ce login !';
     echo $erreur;
-    echo "<br/><a href=\"Index.html\">Accueil</a>";
+    echo "<br/><a href=\"index.php\">Accueil</a>";
     exit();
 }
 }
