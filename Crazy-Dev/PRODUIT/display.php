@@ -1,4 +1,4 @@
-<?php
+<?php 
     include 'connect.php';
 ?>
 
@@ -10,11 +10,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<br>
+<br>
     <div class="container">
-    <button class="btn btn-primary"><a href="produit.php" class="text-light"> 
+    <button class="thebtn" class="btn btn-primary"><a href="produit.php" class="text-light"> 
         Add a product</a></button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <table class="table">
             <thead>
@@ -29,7 +37,7 @@
         <tbody>
 
 
-        <?php
+        <?php 
         
 
         $sql="Select * from datap";
@@ -41,15 +49,15 @@
                 $model=$row['model'];
                 $brand=$row['brand']; 
                 $description=$row['description'];
-                echo '<tr>
+                echo '<tr class="tableau">
                         <th scope="row">'.$id.'</th>
                         <td>'.$image.'</td>
                         <td>'.$model.'</td>
                         <td>'.$brand.'</td>
                         <td>'.$description.'</td>
                         <td>
-                        <button class="btn btn-primary"><a href="update.php?updateid='.$id.'" class="text-light">Update</a></button>
-                        <button class="btn btn-danger"><a href="delete.php?deleteid='.$id.'" class="text-light">Delete</a></button>
+                        <button class="btnup" class="btn btn-primary"><a href="update.php?updateid='.$id.'" class="text-light">Update</a></button>
+                        <button class="btnsup" class="btn btn-danger"><a href="delete.php?deleteid='.$id.'" class="text-light">Delete</a></button>
                         </td>
                       </tr>'; 
             }

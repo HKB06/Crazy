@@ -1,0 +1,95 @@
+body{
+    background-color: blue;
+    text-align: center;
+}
+
+.table {
+    text-align: ce;
+   
+}
+
+tbody{
+    background-color: rgba(255, 255, 255, 0.844);
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+thead{
+    background-color: rgba(255, 255, 255, 0.844);
+    font-family: Arial, sans-serif;
+}
+
+.thebtn{
+        text-decoration: none;
+        padding: 7px;
+        font-family: arial;
+        font-size: 0.9em;
+        color: #FFFFFF;
+        background-color: #1f497d;
+        border-radius: 11px;
+        -webkit-border-radius: 11px;
+        -moz-border-radius: 11px;
+        border: 2px solid #FFFFFF;
+        box-shadow: 1px 1px 4px #444444;
+        -webkit-box-shadow: 1px 1px 4px #444444;
+        -moz-box-shadow: 1px 1px 4px #444444;
+}
+        
+.thebtn:hover {
+        padding: 7px;
+        background-color: #548dd4;
+        box-shadow: 1px 1px 4px #777777;
+        -webkit-box-shadow: 1px 1px 4px #777777;
+        -moz-box-shadow: 1px 1px 4px #777777;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; 
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px;
+}
+
+.btnsup{
+    
+        text-decoration: none;
+        padding: 5px;
+        font-family: arial;
+        font-size: 0.6em;
+        color: #FFFFFF;
+        background-color: #1f497d;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border: 2px groove #FFFFFF;
+        box-shadow: 1px 1px 4px #444444;
+        -webkit-box-shadow: 1px 1px 4px #444444;
+        -moz-box-shadow: 1px 1px 4px #444444;
+    
+}
+
+.btnup{
+        text-decoration: none;
+        padding: 5px;
+        font-family: arial;
+        font-size: 0.6em;
+        color: #FFFFFF;
+        background-color: #1f497d;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border: 2px groove #FFFFFF;
+        box-shadow: 1px 1px 4px #444444;
+        -webkit-box-shadow: 1px 1px 4px #444444;
+        -moz-box-shadow: 1px 1px 4px #444444;
+    
+}
