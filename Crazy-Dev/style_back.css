@@ -1,0 +1,50 @@
+/* Styles pour le login et l'inscription */
+
+body {
+    background-color: blue; /* Utilisation d'une couleur de fond plus claire */
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: #fff; /* Fond blanc pour le conteneur */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    text-align: center;
+    padding: 20px;
+}
+
+#container h1 {
+    color: #333; /* Couleur du texte plus sombre */
+    font-size: 28px; /* Taille de police plus grande */
+    margin-bottom: 20px; /* Espacement entre le titre et les champs */
+}
+
+#login, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Fond plus clair pour les champs */
+}
+
+
+input[type="submit"] {
+    background-color: #333; /* Couleur de fond pour le bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Couleur de fond au survol du bouton */
+}
+
