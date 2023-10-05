@@ -9,12 +9,12 @@
  <!-- tester si l'utilisateur est connecté -->
  <?php
  session_start();
- if($_SESSION['name'] !== ""){
- $user = $_SESSION['name'];
+ if($_SESSION['username'] !== ""){
+ $user = $_SESSION['username'];
  ?>
- <div id="container"> 
+ <div id="container" > 
     <?php
- echo "<center> Bonjour $user, vous êtes connecté </br> <a href=\"index.php\">Accueil</a></center>";
+ echo "<center> Bonjour vous êtes inscrit, connectez vous : </br> <a href=\"login.php\">Connexion</a></center>";
  ?>
  </div>
  <?php
