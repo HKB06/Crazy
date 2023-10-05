@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +12,10 @@ body {
 /* Styles pour le header */
 header {
     background-color: #333;
+    background-image: url('votre-image.jpg'); /* Ajoutez une image de fond */
+    background-size: cover;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     display: flex;
     align-items: center;
@@ -28,18 +29,18 @@ header {
 
 .inscription-button a {
     text-decoration: none;
-    background-color: #333;
+    background-color: #ff6600; /* Couleur d'accentuation correspondant à votre charte graphique */
     color: white;
-    padding: 10px 20px; /* Ajustez la taille du bouton selon vos préférences */
-    border: 1px solid white;
-    border-radius: 40px;
+    padding: 12px 24px; /* Ajustez la taille du bouton selon vos préférences */
+    border: none;
+    border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .inscription-button a:hover {
-    background-color: white;
-    color: #333;
+    background-color: #ff9900; /* Couleur de survol légèrement différente */
 }
 
 .logo img {
@@ -49,10 +50,10 @@ header {
 }
 
 .search-bar {
-    flex: 0,5;
+    flex: 0.5; /* Correction de la virgule à la place de la virgule */
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .search-bar input[type="text"] {
@@ -89,7 +90,7 @@ header {
     display: none;
     position: absolute;
     top: 100%;
-    left: 100;
+    left: 100; /* Correction : ajoutez "px" à "100" */
     background-color: #333;
     list-style-type: none;
     padding: 0;
@@ -119,10 +120,10 @@ header {
 .card {
     width: calc(33% - 20px);
     border: 1px solid #ccc;
-    padding: 15px;
+    padding: 20px; /* Augmentez l'espacement intérieur */
     text-align: center;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #f9f9f9; /* Couleur de fond plus claire */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -164,12 +165,10 @@ header {
     background-color: #555;
 }
 
-
-
 /* Styles pour le footer */
 
 footer {
-    background-color:rgba(4, 121, 255, 0.712);
+    background-color: rgba(4, 121, 255, 0.712);
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -180,9 +179,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0;
-    
 }
-
 
 .pagination a {
     text-decoration: none;
@@ -195,7 +192,7 @@ footer {
     border-radius: 0;
     text-align: center;
     line-height: 30px;
-    margin-right: 15px
+    margin-right: 15px;
 }
 
 /* Change la couleur de fond des numéros de page au survol */
@@ -213,9 +210,6 @@ footer {
     margin: 0;
     list-style-type: none;
 }
-
-
-
 
 /* Styles pour la section publicitaire */
 .publicite {
@@ -236,3 +230,9 @@ footer {
     height: auto;
 }
 
+.test {
+    position: fixed;
+    top: 0;  
+    margin-top: 150px;
+    right: 0; /* Position à droite */
+}

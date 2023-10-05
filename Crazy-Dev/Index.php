@@ -25,8 +25,7 @@
                         <a href="#">Catégories ▼</a>
                         <ul class="submenu">
                             <li><a href="#">BBC</a></li>
-                            <li><a href="#">Catégorie 2</a></li>
-                            <li><a href="#">Catégorie 3</a></li>
+                            <li><a href="#">BDSM</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -34,8 +33,13 @@
            
 
             </nav>
+
             <div class="inscription-button">
-                <a href="#">Inscription</a>
+                <a href="login.php">Connexion</a>
+            </div>
+
+            <div class="inscription-button">
+                <a href="user.php">Inscription</a>
             </div>
     </header>
 
@@ -102,17 +106,18 @@
                 <p>Description du produit 1. Description du produit 1. Description du produit 1. Description du produit
                     1. Description du produit 1. Description du produit 1.</p>
             </div>
-
+            <div class="test">
+        <img src="IMG/giphy.gif" alt="Tu connais" />
+        
+    </div>
 
         </section>
     </main>
 
-    <aside class="publicite">
-        <img src="IMG/giphy (1).gif" alt="Tu connais" />
-    </aside>
+  
 
     <script src="main.js"></script>
-</body>
+
 
 <footer>
     <nav class="pagination">
@@ -125,5 +130,5 @@
         </ul>
     </nav>
 </footer>
-
+</body>
 </html>
